@@ -12,6 +12,8 @@
 		2C4EBAEE22FA72A8006949BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EBAEC22FA72A8006949BB /* Main.storyboard */; };
 		2C4EBAF022FA72A9006949BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EBAEF22FA72A9006949BB /* Assets.xcassets */; };
 		2C4EBAF322FA72A9006949BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EBAF122FA72A9006949BB /* LaunchScreen.storyboard */; };
+		2C4EBAFB22FA72B1006949BB /* SZT9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4EBAFA22FA72B1006949BB /* SZT9.framework */; };
+		2C4EBB0122FA741E006949BB /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4EBB0022FA741E006949BB /* libc++abi.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2C4EBAEF22FA72A9006949BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C4EBAF222FA72A9006949BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C4EBAF422FA72A9006949BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4EBAFA22FA72B1006949BB /* SZT9.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SZT9.framework; sourceTree = "<group>"; };
+		2C4EBB0022FA741E006949BB /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4EBB0122FA741E006949BB /* libc++abi.tbd in Frameworks */,
+				2C4EBAFB22FA72B1006949BB /* SZT9.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				2C4EBAE722FA72A8006949BB /* T9Test */,
 				2C4EBAE622FA72A8006949BB /* Products */,
+				2C4EBAFF22FA741E006949BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +67,17 @@
 				2C4EBAEF22FA72A9006949BB /* Assets.xcassets */,
 				2C4EBAF122FA72A9006949BB /* LaunchScreen.storyboard */,
 				2C4EBAF422FA72A9006949BB /* Info.plist */,
+				2C4EBAFA22FA72B1006949BB /* SZT9.framework */,
 			);
 			path = T9Test;
+			sourceTree = "<group>";
+		};
+		2C4EBAFF22FA741E006949BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C4EBB0022FA741E006949BB /* libc++abi.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +300,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP7R8DB55C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/T9Test",
+				);
 				INFOPLIST_FILE = T9Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +322,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP7R8DB55C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/T9Test",
+				);
 				INFOPLIST_FILE = T9Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

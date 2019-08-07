@@ -1,0 +1,6 @@
+framework module SZT9 {
+  umbrella header "SZT9.h"
+
+  export *
+  module * { export * }
+}
